@@ -1,19 +1,18 @@
 import React from 'react'
-import { PaisShape } from '..';
+import { PaisShape } from '../shapes/PaisShape';
 
-function Pais({pais}) {
-  const {imagen} = pais;
+function Pais({Pais}) {
+  const {flag} = Pais;
 
   return (
     <div>
-        <h1>{imagen}</h1>
-        
+      <img src={flag}></img>        
     </div>
   )
 }
 
 Pais.propTypes = {
-    persona:PaisShape
+    pais:PaisShape
 }
 
 export default Pais

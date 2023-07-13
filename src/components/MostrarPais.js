@@ -1,16 +1,16 @@
 import React from 'react'
 import {arrayOf} from 'prop-types'
-import { PaisShape } from '..'
-import Pais from './pais'
+import { PaisShape } from '../shapes/PaisShape'
+import Pais from './Pais'
 
 function mostrarPais({Pais}) {
   return (
     <>
         
-        {Pais.map((nombre, bandera)=>(
+        {Pais.map((name, flag)=>(
             <Pais
-                key={bandera}
-                pais={nombre}
+                key={flag}
+                pais={name}
             />
         ))}
     </>
@@ -18,7 +18,7 @@ function mostrarPais({Pais}) {
 }
 
 mostrarPais.propTypes = {
-    Pais:arrayOf(mostrarPais)
+    Pais:arrayOf(PaisShape)
 }
 
 export default mostrarPais

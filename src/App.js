@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import MostrarPaises from "./components/MostrarPais";             
 import axios from 'axios';
 import {useState , useEffect} from 'react';
 
@@ -58,7 +58,7 @@ function App() {
     let x = document.forms["myForm"]["fname"].value;
     if (x == "") {
       alert("Name must be filled out");
-      return false;*/
+      return false;*/ 
     
   
 }
